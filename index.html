@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="food-app.js"></script>
+  </head>
+  <body>
     hi
-    <input type="button" value="submit">
-</body>
-<script src="food-app.js"></script>
+    <form>
+      <input type="checkbox" name="vegetarian" id="vegetarian" checked />
+      <label for="vegetarian">Vegetarian</label>
+      <input type="checkbox" name="vegan" id="vegan" />
+      <label for="vegan">Vegan</label>
+      <input type="checkbox" name="glutenFree" id="glutenFree" />
+      <label for="glutenFree">Gluten free</label>
+      <input type="checkbox" name="keto" id="keto" />
+      <label for="keto">ketogenic</label>
+      
+      <div class="includeIngredients">
+        <p>write your ingredients, DO NOT separate with a comma:</p>
+        <input id="includedIngredients" type="text">
+      	</div>
+      
+      
+    </form>
+
+
+    <!--<input type="range" name="prepTime" id="prepTime" min="0" max="240">
+    <output for="prepTime" id="outputForPrep"> 120 minutes</output> 
+    <label for="prepTime">Prep Time</label>--> 
+    <input type="button" value="submit" id="submit" />  
+  </body>
 </html>
